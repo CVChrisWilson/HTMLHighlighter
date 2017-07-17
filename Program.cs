@@ -41,25 +41,25 @@ namespace ConsoleApplication8
             {
                 if (!_tagPair.isOpenOnly && !_tagPair.isCloseOnly)
                 {
-                    for (int i = _tagPair.OpenStartPos; i < _tagPair.OpenEndPos; ++i)
+                    for (int i = _tagPair.OpenStartPos; i <= _tagPair.OpenEndPos; ++i)
                     {
                         pairTagIdx.Add(i);
                     }
-                    for (int j = _tagPair.ClosingStartPos; j < _tagPair.ClosingEndPos; ++j)
+                    for (int j = _tagPair.ClosingStartPos; j <= _tagPair.ClosingEndPos; ++j)
                     {
                         pairTagIdx.Add(j);
                     }
                 }
                 else if (_tagPair.isOpenOnly)
                 {
-                    for (int i = _tagPair.OpenStartPos; i < _tagPair.OpenEndPos; ++i)
+                    for (int i = _tagPair.OpenStartPos; i <= _tagPair.OpenEndPos; ++i)
                     {
                         openOnlyTagIdx.Add(i);
                     }
                 }
                 else if (_tagPair.isCloseOnly)
                 {
-                    for (int i = _tagPair.OpenStartPos; i < _tagPair.OpenEndPos; ++i)
+                    for (int i = _tagPair.OpenStartPos; i <= _tagPair.OpenEndPos; ++i)
                     {
                         closeOnlyTagIdx.Add(i);
                     }
